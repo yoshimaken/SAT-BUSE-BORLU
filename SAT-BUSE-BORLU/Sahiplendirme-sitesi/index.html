@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteriner İlan Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">logo</a>
+            </div>
+            <ul>
+                <li><a href="#"class="active">İlanlar</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            
+            <div class="filtre-container">
+                <div class="filtre-grup">
+                    <div class="grup-baslik">İlan Türü</div>
+                    <label><input type="checkbox" name="ilanTuru" value="kayip"> Kayıp İlanı</label>
+                    <label><input type="checkbox" name="ilanTuru" value="ciftlestirme"> Çiftleştirme İlanı</label>
+                    <label><input type="checkbox" name="ilanTuru" value="sahiplendirme"> Sahiplendirme İlanı</label>
+                </div>
+
+                <div class="filtre-grup">
+                    <div class="grup-baslik">Kategori</div>
+                    <label><input type="checkbox" name="kategori" value="akvaryum"> Akvaryum & Balık</label>
+                    <label><input type="checkbox" name="kategori" value="kedi"> Kedi İlanları</label>
+                    <label><input type="checkbox" name="kategori" value="kemirgen"> Kemirgen İlanları</label>
+                    <label><input type="checkbox" name="kategori" value="kopek"> Köpek İlanları</label>
+                    <label><input type="checkbox" name="kumes"> Kümes Hayvanları</label>
+                    <label><input type="checkbox" name="kus"> Kuş İlanları</label>
+                    <label><input type="checkbox" name="surungen"> Sürüngen İlanları</label>
+                </div>
+
+                <div class="filtre-grup">
+                    <div class="grup-baslik">Alt Kategori</div>
+                    <select class="alt-kategori-select">
+                        <option>Kategori Seçiniz</option>
+                    </select>
+                </div>
+
+                <div class="filtre-grup">
+                    <div class="grup-baslik">Şehir</div>
+                    <div class="sehir-listesi">
+                        <label><input type="checkbox" name="sehir" value="adana"> Adana</label>
+                        <label><input type="checkbox" name="sehir" value="adiyaman"> Adıyaman</label>
+                        <label><input type="checkbox" name="sehir" value="afyonkarahisar"> Afyonkarahisar</label>
+                        <label><input type="checkbox" name="sehir" value="agri"> Ağrı</label>
+                        <label><input type="checkbox" name="amasya" value="amasya"> Amasya</label>
+                        <label><input type="checkbox" name="ankara" value="ankara"> Ankara</label>
+                        <label><input type="checkbox" name="antalya" value="antalya"> Antalya</label>
+                        <label><input type="checkbox" name="yozgat" value="yozgat"> Yozgat</label>
+                    </div>
+                </div>
+
+                <div class="filtre-grup">
+                    <div class="grup-baslik">İlan Başlığı</div>
+                    <input type="text" placeholder="İlan Başlığı" class="ilan-basligi-input">
+                </div>
+
+                <div class="buton-grup">
+                    <button class="cop-butonu">🗑️</button>
+                    <button class="filtrele-butonu">Filtrele</button>
+                </div>
+            </div>
+
+            <div class="ilan-listesi">
+                <div class="center-content">
+                    <h1>İlan Başlıkları</h1>
+                    <h2>Burada Hayvan İlanları Listelenecek</h2>
+                    <p>Filtreleme alanı solda, ilanlar sağda görünecek.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
